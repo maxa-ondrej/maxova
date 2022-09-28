@@ -32,7 +32,7 @@
     onMount(initialFetch);
 </script>
 
-<a on:click={toggle}>
+<a class="a" on:click={toggle}>
     <div class="icon">
         {#if $darkMode}
             <Moon/>

@@ -9,13 +9,12 @@ body {
   color: var(--background-text);
 }
 
-button {
-  &.button {
-    border: none;
-    border-radius: 4px;
-    padding: 0.5rem;
-    cursor: pointer;
-  }
+.button {
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
 
   &.primary {
     color: var(--primary-text);
@@ -43,7 +42,7 @@ button {
   }
 }
 
-a {
+.a {
   cursor: pointer;
   text-decoration: none;
 
@@ -68,7 +67,6 @@ a {
       color: var(--error-variant);
     }
   }
-  text-decoration: none;
 
   &:hover {
     text-decoration: underline;

@@ -27,5 +27,8 @@
     "linear_algebra_1": "Lineární algebra 1",
     "discrete_mathematics": "Diskrétní matematika"
   },
-  "information_on": "Informace na"
+  "information": {
+    "on": "Informace na",
+    "here": "Informace zde."
+  }
 }

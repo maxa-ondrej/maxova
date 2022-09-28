@@ -15,7 +15,7 @@
         Praha 1, 118 00
     </p>
     <hr class="solid" />
-    <p><a class="primary" href="mailto:maxova@kam.mff.cuni.cz">maxova@kam.mff.cuni.cz</a></p>
+    <p><a class="a primary" href="mailto:maxova@kam.mff.cuni.cz">maxova@kam.mff.cuni.cz</a></p>
 </div>
 
 <style lang="scss">

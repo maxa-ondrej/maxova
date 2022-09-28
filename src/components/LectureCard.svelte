@@ -1,7 +1,9 @@
 <script lang="ts">
     import {_} from "svelte-i18n";
+    import {route} from "$lib/url";
 
-    export let name;
+    export let type;
+    export let position;
     export let color;
     export let id;
     export let day;
@@ -11,11 +13,13 @@
 
 <div class="card" style="--color: {color}">
     <h4><i>{$_('lectures.practice')}</i></h4>
-    <h2>{name}</h2>
+    <h2>{$_(`lectures.${type}`)}</h2>
     <h4><i>{id}</i></h4>
     <p>{day} {time} {$_('room.in')} {room}</p>
     <slot name="button">
-
+        <a class="button secondary" href={route(`/teaching/${type}/${position}`)}>
+            {$_('information.here')}
+        </a>
     </slot>
 </div>
 
@@ -33,8 +37,8 @@
       font-size: 25px;
     }
 
-    button {
-      margin-top: 15px;
+    p {
+      margin-bottom: 15px;
     }
   }
 </style>
