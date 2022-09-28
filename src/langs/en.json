@@ -24,8 +24,12 @@
 	},
 	"lectures": {
 		"practice": "Practice",
-		"linear_algebra_1": "Linear algebra 1",
-		"discrete_mathematics": "Discrete mathematics"
+		"la": "Linear algebra 1",
+		"dm": "Discrete mathematics",
+		"for": {
+			"la": "Linear algebra 1",
+			"dm": "Discrete mathematics"
+		}
 	},
 	"information_on": "Information on"
 }

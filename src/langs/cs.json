@@ -20,12 +20,34 @@
 		"thursday": "Čtvrtek",
 		"friday": "Pátek",
 		"saturday": "Sobota",
-		"sunday": "Neděle"
+		"sunday": "Neděle",
+		"short": {
+			"monday": "po",
+			"tuesday": "ut",
+			"wednesday": "st",
+			"thursday": "ct",
+			"friday": "pa",
+			"saturday": "so",
+			"sunday": "ne"
+		},
+		"in": {
+			"monday": "v pondělí",
+			"tuesday": "v úterý",
+			"wednesday": "ve středu",
+			"thursday": "ve čtvrtek",
+			"friday": "v pátek",
+			"saturday": "v sobotu",
+			"sunday": "v neděli"
+		}
 	},
 	"lectures": {
 		"practice": "Cvičení",
-		"linear_algebra_1": "Lineární algebra 1",
-		"discrete_mathematics": "Diskrétní matematika"
+		"la": "Lineární algebra 1",
+		"dm": "Diskrétní matematika",
+		"for": {
+			"la": "Lineární algebře 1",
+			"dm": "Diskrétní matematice"
+		}
 	},
 	"information": {
 		"on": "Informace na",

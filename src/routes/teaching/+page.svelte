@@ -5,28 +5,25 @@
 </script>
 
 <LectureCard
-	type="discrete_mathematics"
-	position="1"
+	type="dm"
 	id="NDMI002"
-	day={$_('days.monday')}
+	day='monday'
 	time="12:20"
 	room="N5"
 />
 <LectureCard
-	type="discrete_mathematics"
-	position="2"
+	type="dm"
 	id="NDMI002"
-	day={$_('days.monday')}
+	day='monday'
 	time="15:40"
 	room="N5"
 >
 	<MoodleButton id="14018" slot="button" />
 </LectureCard>
 <LectureCard
-	type="discrete_mathematics"
-	position="3"
+	type="dm"
 	id="NDMI002"
-	day={$_('days.thursday')}
+	day='thursday'
 	time="14:00"
 	room="N7"
 >
@@ -34,35 +31,31 @@
 </LectureCard>
 
 <LectureCard
-	type="linear_algebra_1"
-	position="1"
+	type="la"
 	id="NMAI057"
-	day={$_('days.monday')}
+	day='monday'
 	time="14:00"
 	room="N7"
 />
 <LectureCard
-	type="linear_algebra_1"
-	position="2"
+	type="la"
 	id="NMAI057"
-	day={$_('days.wednesday')}
+	day='wednesday'
 	time="15:40"
 	room="N4"
 />
 <LectureCard
-	type="linear_algebra_1"
-	position="3"
+	type="la"
 	id="NMAI057"
-	day={$_('days.thursday')}
+	day='thursday'
 	time="12:20"
 	room="N7"
 />
 
 <LectureCard
-	type="discrete_mathematics"
-	position="4"
+	type="dm"
 	id="NMIN105"
-	day={$_('days.wednesday')}
+	day='wednesday'
 	time="14:00"
 	room="N2"
 >

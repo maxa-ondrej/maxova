@@ -3,7 +3,7 @@
 
 	/** @type {import('./$types').PageData} */
 	export let data;
-	let name = data.name;
+	let type = data.type;
 </script>
 
-<LectureDetails {name} day="ve středu" time="15:40" room="N4"></LectureDetails>
+<LectureDetails {type} day="monday" time="12:20" room="N5"></LectureDetails>

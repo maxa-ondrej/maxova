@@ -3,21 +3,21 @@
 	import { route } from '$lib/url';
 
 	export let type;
-	export let position;
 	export let color;
 	export let id;
 	export let day;
 	export let time;
 	export let room;
+	let uuid = $_(`days.short.${day}`) + '_' + time.replace(':', '_');
 </script>
 
 <div class="card" style="--color: {color}">
 	<h4><i>{$_('lectures.practice')}</i></h4>
 	<h2>{$_(`lectures.${type}`)}</h2>
 	<h4><i>{id}</i></h4>
-	<p>{day} {time} {$_('room.in')} {room}</p>
+	<p>{$_(`days.${day}`)} {time} {$_('room.in')} {room}</p>
 	<slot name="button">
-		<a class="button secondary" href={route(`/teaching/${type}/${position}`)}>
+		<a class="button secondary" href={route(`/teaching/${type}/${uuid}`)}>
 			{$_('information.here')}
 		</a>
 	</slot>
