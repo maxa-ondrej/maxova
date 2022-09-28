@@ -1,1 +1,1 @@
-export const route = (route = '/') => `/~maxova${route}`
+export const route = (route = '/') => `/~maxova${route}`;

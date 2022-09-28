@@ -1,38 +1,38 @@
 @mixin lightMode {
-  --primary: #0028ee;
-  --primary-variant: #1f41e8;
-  --primary-text: #ffffff;
-  --secondary: #7387ec;
-  --secondary-variant: #3b57ea;
-  --secondary-text: #000000;
-  --background: #ffffff;
-  --background-text: #000000;
-  --surface: #cfcfcf;
-  --surface-text: #000000;
-  --error: #b00020;
-  --error-variant: #8b0117;
-  --error-text: #ffffff;
+	--primary: #0028ee;
+	--primary-variant: #1f41e8;
+	--primary-text: #ffffff;
+	--secondary: #7387ec;
+	--secondary-variant: #3b57ea;
+	--secondary-text: #000000;
+	--background: #ffffff;
+	--background-text: #000000;
+	--surface: #cfcfcf;
+	--surface-text: #000000;
+	--error: #b00020;
+	--error-variant: #8b0117;
+	--error-text: #ffffff;
 }
 
 @mixin darkMode {
-  --primary: #bb86fc;
-  --primary-variant: #864fff;
-  --primary-text: #000000;
-  --secondary: #037975;
-  --secondary-variant: #03ae9e;
-  --secondary-text: #000000;
-  --background: #121212;
-  --background-text: #ffffff;
-  --surface: #303030;
-  --surface-text: #000000;
-  --error: #cf6679;
-  --error-variant: #b24c5e;
-  --error-text: #000000;
+	--primary: #bb86fc;
+	--primary-variant: #864fff;
+	--primary-text: #000000;
+	--secondary: #037975;
+	--secondary-variant: #03ae9e;
+	--secondary-text: #000000;
+	--background: #121212;
+	--background-text: #ffffff;
+	--surface: #303030;
+	--surface-text: #000000;
+	--error: #cf6679;
+	--error-variant: #b24c5e;
+	--error-text: #000000;
 }
 
 body:not(.dark-mode) {
-  @include lightMode;
+	@include lightMode;
 }
 body.dark-mode {
-  @include darkMode;
+	@include darkMode;
 }

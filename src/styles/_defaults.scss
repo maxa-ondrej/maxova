@@ -1,74 +1,74 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--background-text);
+	background-color: var(--background);
+	color: var(--background-text);
 }
 
 .button {
-  border: none;
-  border-radius: 4px;
-  padding: 0.5rem;
-  cursor: pointer;
-  text-decoration: none;
+	border: none;
+	border-radius: 4px;
+	padding: 0.5rem;
+	cursor: pointer;
+	text-decoration: none;
 
-  &.primary {
-    color: var(--primary-text);
-    background-color: var(--primary);
+	&.primary {
+		color: var(--primary-text);
+		background-color: var(--primary);
 
-    &:hover {
-      background-color: var(--primary-variant);
-    }
-  }
-  &.secondary {
-    color: var(--secondary-text);
-    background-color: var(--secondary);
+		&:hover {
+			background-color: var(--primary-variant);
+		}
+	}
+	&.secondary {
+		color: var(--secondary-text);
+		background-color: var(--secondary);
 
-    &:hover {
-      background-color: var(--secondary-variant);
-    }
-  }
-  &.error {
-    color: var(--error-text);
-    background-color: var(--error);
+		&:hover {
+			background-color: var(--secondary-variant);
+		}
+	}
+	&.error {
+		color: var(--error-text);
+		background-color: var(--error);
 
-    &:hover {
-      background-color: var(--error-variant);
-    }
-  }
+		&:hover {
+			background-color: var(--error-variant);
+		}
+	}
 }
 
 .a {
-  cursor: pointer;
-  text-decoration: none;
+	cursor: pointer;
+	text-decoration: none;
 
-  &.primary {
-    color: var(--primary);
+	&.primary {
+		color: var(--primary);
 
-    &:hover {
-      color: var(--primary-variant);
-    }
-  }
-  &.secondary {
-    color: var(--secondary);
+		&:hover {
+			color: var(--primary-variant);
+		}
+	}
+	&.secondary {
+		color: var(--secondary);
 
-    &:hover {
-      color: var(--secondary-variant);
-    }
-  }
-  &.error {
-    color: var(--error);
+		&:hover {
+			color: var(--secondary-variant);
+		}
+	}
+	&.error {
+		color: var(--error);
 
-    &:hover {
-      color: var(--error-variant);
-    }
-  }
+		&:hover {
+			color: var(--error-variant);
+		}
+	}
 
-  &:hover {
-    text-decoration: underline;
-  }
+	&:hover {
+		text-decoration: underline;
+	}
 }

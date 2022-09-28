@@ -8,14 +8,14 @@ const config = {
 	preprocess: preprocess({
 		scss: {
 			includePaths: ['src'],
-			prependData: `@use 'src/styles/main';`,
+			prependData: `@use 'src/styles/main';`
 		},
-		sourceMap: true,
+		sourceMap: true
 	}),
 
 	kit: {
 		adapter: adapter({ fallback: 'index.html' }),
-		trailingSlash: "always",
+		trailingSlash: 'always',
 		paths: {
 			base: '/~maxova'
 		}

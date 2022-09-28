@@ -1,31 +1,31 @@
 {
-  "nav": {
-    "home": "Home",
-    "teaching": "Teaching"
-  },
-  "room": {
-    "name": "room",
-    "number": "n",
-    "in": "in"
-  },
-  "profile": {
-    "name": "Jana Maxová",
-    "position": "Applied Mathematics",
-    "school": "Charles University, Prague"
-  },
-  "days": {
-    "monday": "Monday",
-    "tuesday": "Tuesday",
-    "wednesday": "Wednesday",
-    "thursday": "Thursday",
-    "friday": "Friday",
-    "saturday": "Saturday",
-    "sunday": "Sunday"
-  },
-  "lectures": {
-    "practice": "Practice",
-    "linear_algebra_1": "Linear algebra 1",
-    "discrete_mathematics": "Discrete mathematics"
-  },
-  "information_on": "Information on"
+	"nav": {
+		"home": "Home",
+		"teaching": "Teaching"
+	},
+	"room": {
+		"name": "room",
+		"number": "n",
+		"in": "in"
+	},
+	"profile": {
+		"name": "Jana Maxová",
+		"position": "Applied Mathematics",
+		"school": "Charles University, Prague"
+	},
+	"days": {
+		"monday": "Monday",
+		"tuesday": "Tuesday",
+		"wednesday": "Wednesday",
+		"thursday": "Thursday",
+		"friday": "Friday",
+		"saturday": "Saturday",
+		"sunday": "Sunday"
+	},
+	"lectures": {
+		"practice": "Practice",
+		"linear_algebra_1": "Linear algebra 1",
+		"discrete_mathematics": "Discrete mathematics"
+	},
+	"information_on": "Information on"
 }

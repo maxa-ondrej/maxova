@@ -1,32 +1,31 @@
-<svelte:head>
-    <title>{$_('profile.name')}</title>
-</svelte:head>
-
 <script lang="ts">
-    import NavBar from "../components/NavBar.svelte";
-    import {_, addMessages, getLocaleFromNavigator, init} from "svelte-i18n";
-    import en from '../langs/en.json';
-    import cs from '../langs/cs.json';
+	import NavBar from '../components/NavBar.svelte';
+	import { _, addMessages, getLocaleFromNavigator, init } from 'svelte-i18n';
+	import en from '../langs/en.json';
+	import cs from '../langs/cs.json';
 
-    addMessages('en', en);
-    addMessages('cs', cs);
+	addMessages('en', en);
+	addMessages('cs', cs);
 
-    init({
-        fallbackLocale: 'cs',
-        // initialLocale: getLocaleFromNavigator(),
-    });
+	init({
+		fallbackLocale: 'cs'
+		// initialLocale: getLocaleFromNavigator(),
+	});
 </script>
 
-<NavBar/>
+<svelte:head>
+	<title>{$_('profile.name')}</title>
+</svelte:head>
+
+<NavBar />
 <div class="container">
-    <slot/>
+	<slot />
 </div>
 
-
 <style lang="scss" global>
-  @import "../styles/main";
+	@import '../styles/main';
 
-  div.container {
-    margin-top: 30px;
-  }
+	div.container {
+		margin-top: 30px;
+	}
 </style>

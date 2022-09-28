@@ -1,34 +1,34 @@
 {
-  "nav": {
-    "home": "Domů",
-    "teaching": "Výuka"
-  },
-  "room": {
-    "name": "místnost",
-    "number": "č",
-    "in": "v"
-  },
-  "profile": {
-    "name": "Jana Maxová",
-    "position": "Aplikovaná Matematika",
-    "school": "Karlova Univerzita, Praha"
-  },
-  "days": {
-    "monday": "Pondělí",
-    "tuesday": "Úterý",
-    "wednesday": "Středa",
-    "thursday": "Čtvrtek",
-    "friday": "Pátek",
-    "saturday": "Sobota",
-    "sunday": "Neděle"
-  },
-  "lectures": {
-    "practice": "Cvičení",
-    "linear_algebra_1": "Lineární algebra 1",
-    "discrete_mathematics": "Diskrétní matematika"
-  },
-  "information": {
-    "on": "Informace na",
-    "here": "Informace zde."
-  }
+	"nav": {
+		"home": "Domů",
+		"teaching": "Výuka"
+	},
+	"room": {
+		"name": "místnost",
+		"number": "č",
+		"in": "v"
+	},
+	"profile": {
+		"name": "Jana Maxová",
+		"position": "Aplikovaná Matematika",
+		"school": "Karlova Univerzita, Praha"
+	},
+	"days": {
+		"monday": "Pondělí",
+		"tuesday": "Úterý",
+		"wednesday": "Středa",
+		"thursday": "Čtvrtek",
+		"friday": "Pátek",
+		"saturday": "Sobota",
+		"sunday": "Neděle"
+	},
+	"lectures": {
+		"practice": "Cvičení",
+		"linear_algebra_1": "Lineární algebra 1",
+		"discrete_mathematics": "Diskrétní matematika"
+	},
+	"information": {
+		"on": "Informace na",
+		"here": "Informace zde."
+	}
 }
