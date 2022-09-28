@@ -6,7 +6,6 @@
 <div class="card">
 	<img src={photo} alt="" style="width:100%" />
 	<h1>{$_('profile.name')}</h1>
-	<p class="title">{$_('profile.position')}</p>
 	<p>{$_('profile.school')}</p>
 	<hr class="solid" />
 	<p>
@@ -38,11 +37,6 @@
 		p {
 			padding-bottom: 10px;
 		}
-	}
-
-	.title {
-		color: grey;
-		font-size: 18px;
 	}
 
 	button {
