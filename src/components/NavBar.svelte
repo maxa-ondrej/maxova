@@ -2,6 +2,7 @@
     import DarkModeToggle from "./DarkModeToggle.svelte";
     import {_} from "svelte-i18n";
     import LanguageToggle from "./LanguageToggle.svelte";
+    import {route} from "$lib/url";
 </script>
 
 <nav class="navbar">
@@ -13,8 +14,8 @@
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <!-- NAVIGATION MENUS -->
             <div class="menu">
-                <li><a href="/">{$_('nav.home')}</a></li>
-                <li><a href="/teaching">{$_('nav.teaching')}</a></li>
+                <li><a href={route()}>{$_('nav.home')}</a></li>
+                <li><a href={route('/teaching')}>{$_('nav.teaching')}</a></li>
                 <li class="end"><DarkModeToggle/></li>
                 <li><LanguageToggle /></li>
             </div>

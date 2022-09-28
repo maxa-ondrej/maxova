@@ -15,7 +15,10 @@ const config = {
 
 	kit: {
 		adapter: adapter({ fallback: 'index.html' }),
-		trailingSlash: "always"
+		trailingSlash: "always",
+		paths: {
+			base: '/~maxova'
+		}
 	}
 };
 

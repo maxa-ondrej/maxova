@@ -1,26 +1,22 @@
 <script lang="ts">
     import {_} from "svelte-i18n";
 
-    function openInNewTab(url) {
-        window.open(url, '_blank').focus();
-    }
-
     export let name;
+    export let color;
     export let id;
     export let day;
     export let time;
     export let room;
-    export let link;
 </script>
 
-<div class="card">
+<div class="card" style="--color: {color}">
     <h4><i>{$_('lectures.practice')}</i></h4>
     <h2>{name}</h2>
     <h4><i>{id}</i></h4>
     <p>{day} {time} {$_('room.in')} {room}</p>
-    <button class="button primary" on:click={() => openInNewTab(`https://dl1.cuni.cz/course/view.php?id=${link}`)}>
-        {$_('information_on')} Moodle.
-    </button>
+    <slot name="button">
+
+    </slot>
 </div>
 
 <style lang="scss">
