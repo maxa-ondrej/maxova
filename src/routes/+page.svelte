@@ -6,8 +6,6 @@
 <div class="card">
 	<img src={photo} alt="" style="width:100%" />
 	<h1>{$_('profile.name')}</h1>
-	<p>{$_('profile.school')}</p>
-	<hr class="solid" />
 	<p>
 		KAM MFF UK, {$_('room.name')}
 		{$_('room.number')}. 325<br />
