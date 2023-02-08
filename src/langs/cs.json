@@ -41,9 +41,13 @@
 	"lectures": {
 		"practice": "Cvičení",
 		"la": "Lineární algebra 1",
+		"la2": "Lineární algebra 2",
+		"ma1": "Matematická analýza 1",
 		"dm": "Diskrétní matematika",
 		"for": {
 			"la": "Lineární algebře 1",
+			"la2": "Lineární algebře 2",
+			"ma1": "Matematické analýze 1",
 			"dm": "Diskrétní matematice"
 		}
 	},

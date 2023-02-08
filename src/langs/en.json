@@ -25,9 +25,13 @@
 	"lectures": {
 		"practice": "Practice",
 		"la": "Linear algebra 1",
+		"la2": "Linear algebra 2",
+		"ma1": "Matematical analysis 1",
 		"dm": "Discrete mathematics",
 		"for": {
 			"la": "Linear algebra 1",
+			"la2": "Linear algebra 2",
+			"ma1": "Matematical analysis 1",
 			"dm": "Discrete mathematics"
 		}
 	},
