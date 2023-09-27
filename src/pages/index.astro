@@ -1,16 +1,26 @@
 ---
+import photo from '@assets/images/photo.jpg';
+import Layout from '@layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import { getEntry } from 'astro:content';
 
+const { data } = await getEntry('teacher', 'maxova');
+const { address, city, email, name, street, surname, zip } = data;
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>Astro</h1>
-  </body>
-</html>
+<Layout>
+  <div class="m-auto mt-4 max-w-xs p-2 text-center text-dominant shadow-lg">
+    <Image src={photo} alt={`${name} ${surname} - foto`} title={`${name} ${surname}`} class="w-full" />
+    <article class="my-4 border-y-2 py-1">
+      <h1 class="text-3xl">{name}&nbsp;{surname}</h1>
+      <p>
+        {address}<br />
+        {street}<br />
+        {city}, {zip}
+      </p>
+    </article>
+    <p class="mb-2">
+      <a class="font-semibold text-accent hover:underline" href={`mailto:${email}`}>{email}</a>
+    </p>
+  </div>
+</Layout>

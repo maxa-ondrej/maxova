@@ -1,63 +1,51 @@
 <script lang="ts">
-	import { _ } from 'svelte-i18n';
-	import { route } from '$lib/url';
+  export let name: string;
+  export let id: string;
+  export let moodle: number;
+  export let day: keyof typeof days;
+  export let time: string;
+  export let room: string;
+  export let span: [number, number];
 
-	export let type: string;
-	export let color: string | undefined = undefined;
-	export let id: string;
-	export let day: string;
-	export let time: string;
-	export let room: string;
-	export let span: number;
-	let uuid = $_(`days.short.${day}`) + '_' + time.replace(':', '_');
+  const days = {
+    mon: 'Pondělí',
+    tue: 'Úterý',
+    wed: 'středa',
+    thu: 'Čtvrtek',
+    fri: 'Pátek',
+  } as const;
+
+  $: width = (span[0] / span[1]) * 100;
 </script>
 
-<div class="card" style="--color: {color}; --span: {span}">
-	<h4><i>{$_('lectures.practice')}</i></h4>
-	<h2>{$_(`lectures.${type}`)}</h2>
-	<h4><i>{id}</i></h4>
-	<p>{$_(`days.${day}`)} {time} {$_('room.in')} {room}</p>
-	<slot name="button">
-		<a class="button secondary" href={route(`/teaching/${type}/${uuid}`)}>
-			{$_('information.here')}
-		</a>
-	</slot>
+<div style="--width: {width}%" class="p-4">
+  <article class="p-6 text-center text-dominant shadow-lg">
+    <h2 class="text-lg"><i>Cvičení</i></h2>
+    <h1 class="text-2xl">{name}</h1>
+    <p class="text-md"><i>{id}</i></p>
+    <p class="text-md mb-4">{days[day]} {time} v {room}</p>
+    <a
+      class="rounded border-2 border-accent p-2 text-accent transition-colors hover:bg-accent hover:text-dominant"
+      href={`https://dl1.cuni.cz/course/view.php?id=${moodle}`}
+      target="_blank"
+    >
+      Informace na Moodle.
+    </a>
+  </article>
 </div>
 
-<style lang="scss">
-.card {
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-	border-radius: 5px;
-	background-color: var(--surface);
-	margin: 20px;
-	padding: 20px;
-	text-align: center;
-	grid-column: span var(--span);
-
-	.title {
-		font-size: 25px;
-	}
-
-	p {
-		margin-bottom: 15px;
-	}
-}
-
-@media only screen and (max-width: 1200px) {
-	.card {
-		grid-column: span 4;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.card {
-		grid-column: span 6;
-	}
-}
-
-@media only screen and (max-width: 480px) {
-	.card {
-		grid-column: span 12;
-	}
-}
+<style>
+  div {
+    width: 100%;
+  }
+  @media (min-width: 640px) {
+    div {
+      width: 50%;
+    }
+  }
+  @media (min-width: 768px) {
+    div {
+      width: var(--width, 100%);
+    }
+  }
 </style>

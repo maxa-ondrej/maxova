@@ -1,0 +1,24 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import NavBar from '@components/NavBar.svelte';
+import { route } from '@lib/url';
+---
+
+<!doctype html>
+<html lang="en" transition:animate="none">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href={route('/favicon.svg')} />
+    <meta name="generator" content={Astro.generator} />
+    <title>Jana Maxová</title>
+    <ViewTransitions fallback="swap" />
+  </head>
+  <body class="bg-complementary font-mono">
+    <NavBar />
+    <main class="mt-8">
+      <slot />
+    </main>
+  </body>
+</html>

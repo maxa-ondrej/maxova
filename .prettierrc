@@ -4,7 +4,7 @@
   "singleQuote": true,
   "trailingComma": "all",
   "printWidth": 120,
-  "plugins": ["prettier-plugin-svelte", "prettier-plugin-astro"],
+  "plugins": ["prettier-plugin-svelte", "prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   "overrides": [
     { "files": "*.svelte", "options": { "parser": "svelte" } },
     { "files": "*.astro", "options": { "parser": "astro" } }

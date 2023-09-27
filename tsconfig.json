@@ -3,9 +3,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "ƒ": ["src/lib/shared/function"],
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
+      "@content": ["src/content"],
+      "@content/*": ["src/content/*"],
       "@layouts/*": ["src/layouts/*"],
       "@lib/*": ["src/lib/*"],
       "@middleware/*": ["src/middleware/*"]

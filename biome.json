@@ -21,6 +21,6 @@
     }
   },
   "files": {
-    "ignore": ["/.svelte-kit/", "/dist/", "/.pnpm-store"]
+    "ignore": ["/.astro/", "/dist/", "/.pnpm-store"]
   }
 }
