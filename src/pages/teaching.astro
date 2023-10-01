@@ -9,10 +9,6 @@ const lectures = collection.map(({ data }) => data).sort((a, b) => a.position - 
 
 <Layout>
   <section class="m-auto mb-8 flex flex-row flex-wrap xl:max-w-6xl">
-    {
-      lectures.map(({ span, day, id, moodle, room, time, name }) => (
-        <LectureCard {span} {day} {id} {moodle} {name} {time} {room} />
-      ))
-    }
+    {lectures.map((data) => <LectureCard {data} />)}
   </section>
 </Layout>

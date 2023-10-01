@@ -1,6 +1,7 @@
 ---
 position: 2
 span: 1/2
+heading: Cvičení
 name: Diskrétní matematika
 id: NMIN105
 day: thu

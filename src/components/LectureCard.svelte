@@ -1,11 +1,7 @@
 <script lang="ts">
-  export let name: string;
-  export let id: string;
-  export let moodle: number;
-  export let day: keyof typeof days;
-  export let time: string;
-  export let room: string;
-  export let span: [number, number];
+  import type { CollectionEntry } from 'astro:content';
+
+  export let data: CollectionEntry<'lecture'>['data'];
 
   const days = {
     mon: 'Pondělí',
@@ -15,18 +11,20 @@
     fri: 'Pátek',
   } as const;
 
-  $: width = (span[0] / span[1]) * 100;
+  $: width = (data.span[0] / data.span[1]) * 100;
 </script>
 
 <div style="--width: {width}%" class="p-4">
   <article class="p-6 text-center text-dominant shadow-lg">
-    <h2 class="text-lg"><i>Cvičení</i></h2>
-    <h1 class="text-2xl">{name}</h1>
-    <p class="text-md"><i>{id}</i></p>
-    <p class="text-md mb-4">{days[day]} {time} v {room}</p>
+    {#if data.heading}
+      <h2 class="text-lg"><i>Cvičení</i></h2>
+    {/if}
+    <h1 class="text-2xl">{data.name}</h1>
+    <p class="text-md"><i>{data.id}</i></p>
+    <p class="text-md mb-4">{days[data.day]} {data.time} v {data.room}</p>
     <a
       class="rounded border-2 border-accent p-2 text-accent transition-colors hover:bg-accent hover:text-dominant"
-      href={`https://dl1.cuni.cz/course/view.php?id=${moodle}`}
+      href={`https://dl1.cuni.cz/course/view.php?id=${data.moodle}`}
       target="_blank"
     >
       Informace na Moodle.

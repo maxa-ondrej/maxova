@@ -1,6 +1,7 @@
 ---
 position: 1
 span: 1/2
+heading: Cvičení
 name: Diskrétní matematika
 id: NDMI002
 day: wed

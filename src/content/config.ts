@@ -8,6 +8,7 @@ const lecture = defineCollection({
       .regex(/^[0-9]+\/[0-9]+$/)
       .transform((val) => val.split('/', 2).map(Number) as [number, number]),
     name: z.string(),
+    heading: z.string().optional(),
     id: z.string().length(7).regex(/^[A-Z]{4}[0-9]{3}$/),
     day: z.enum(['mon', 'tue', 'wed', 'thu', 'fri']),
     time: z.string().regex(/^[0-9]{2}:[0-9]{2}$/),
